@@ -6,7 +6,7 @@
 Leveraging **DistilBERT** and **Graph Neural Networks (GNNs)**  
 for detecting and tracking events as they emerge and evolve on social media platforms.
 
- ![Architecture](assets/archi.jpeg)
+ ![Architecture](assets/archi.png)
 </div>
 
 </div>
