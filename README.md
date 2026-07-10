@@ -1,6 +1,17 @@
+<div align="center">
+
 # DistilBERT-GNN: Social Media Event Detection
 
-An incremental, adaptable, and contextually aware event detection framework that leverages DistilBERT and Graph Neural Networks (GNNs) for detecting and tracking events as they emerge and evolve on social media platforms.
+### An Incremental, Adaptable, and Contextually Aware Framework  
+Leveraging **DistilBERT** and **Graph Neural Networks (GNNs)**  
+for detecting and tracking events as they emerge and evolve on social media platforms.
+
+ ![Architecture](assets/archi.jpeg)
+</div>
+
+</div>
+
+
 
 ## Overview
 
