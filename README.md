@@ -69,6 +69,8 @@ Three-stage lifecycle:
 - **Stage II (Detection)**: Real-time event detection via graph updates
 - **Stage III (Maintenance)**: Periodic retraining to discard obsolete messages and retain relevant patterns
 
+<img width="742" height="451" alt="Image" src="https://github.com/user-attachments/assets/d2cfa0be-bfb2-4169-a0eb-f13095e3ca56" />
+
 ### 4. Node Filtering (DistilBERT-based)
 Employs sentiment analysis via DistilBERT to:
 - Predict emotional tone of messages
