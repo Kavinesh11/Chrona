@@ -54,7 +54,9 @@ python compare_runs.py <run_dir> [<run_dir> ...] [--section with_isolated_nodes|
 python visualize_run.py metrics <run_dir> | --root <root>                  # NMI/AMI/ARI over time -> metrics_over_time.png
 python visualize_run.py embeddings <run_dir> --block <i>                    # PCA scatter of message embeddings -> embedding_clusters_<i>.png
 python visualize_run.py graph --data-path <data_path> --block <i>           # node-degree histogram -> degree_distribution_<i>.png
+python tools/run_dashboard.py                                               # Launch interactive Streamlit web visualizer
 ```
+
 `run_artifacts.py` is the shared parsing library behind the run-inspection CLIs (`latest_run_dir`, `summarize_run`,
 `pick_metrics`, `load_evaluate_history`) — extend parsing logic there, not in the individual scripts.
 `visualize_run.py` produces the figures used in the case-study report/slides (see README's Visualization section);
