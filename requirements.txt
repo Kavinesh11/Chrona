@@ -19,3 +19,6 @@ torch==2.2.0
 torchdata==0.7.1
 tqdm==4.67.3
 transformers==5.2.0
+streamlit>=1.30.0
+plotly>=5.18.0
+pyvis>=0.3.2

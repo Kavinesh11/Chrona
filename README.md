@@ -211,6 +211,29 @@ time chart proving the incremental claim, (2) a cluster plot proving the communi
 degree-distribution chart establishing that the network is non-trivial (i.e., not just disconnected pairs — the
 whole reason GNN message-passing over it is worthwhile).
 
+### Interactive Web Dashboard Suite
+
+For an interactive web dashboard experience (3D embedding clusters, interactive network topology maps, streaming event lifecycles, and GNN node filter explainability), launch the Streamlit suite:
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Launch interactive web app
+python tools/run_dashboard.py
+# -> Opens http://localhost:8501 with 5 interactive analysis tabs:
+#    1. Metrics & Benchmarks (NMI/AMI/ARI trends & radar charts)
+#    2. Embedding Space Projections (Interactive Plotly scatter with hover tooltips)
+#    3. Message Graph Network (PyVis topology explorer with interactive node physics)
+#    4. Event Streaming Lifecycle (Heatmap & stacked volume stream over blocks M_0..M_21)
+#    5. Node Filtering & Explainability (Sentiment vs Centrality retention breakdown)
+
+# Optional: Generate synthetic dataset for immediate testing without running full training loop
+python tools/dashboard/export_demo_data.py
+```
+
+
+
 ## 6. Discussion & Implications
 
 **Real-world relevance.** A model that reliably clusters emerging messages into events *as they arrive* is
