@@ -1,0 +1,11 @@
+{
+  "filter_method": "sentiment",
+  "remove_obsolete": 2,
+  "window_size": 3,
+  "num_heads": 4,
+  "hidden_dim": 8,
+  "out_dim": 32,
+  "n_epochs": 15,
+  "patience": 5,
+  "is_demo_dataset": true
+}

@@ -1,0 +1,15 @@
+Evaluating initial block 0...
+test_nmi: 0.640
+test_ami: 0.460
+test_ari: 0.190
+
+Evaluating block 1...
+test_nmi: 0.690
+test_ami: 0.510
+test_ari: 0.220
+
+Evaluating block 2...
+test_nmi: 0.725
+test_ami: 0.535
+test_ari: 0.245
+
