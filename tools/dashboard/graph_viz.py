@@ -84,15 +84,30 @@ def generate_pyvis_html(
     net.set_options("""
     var options = {
       "physics": {
-        "barnesHut": {
-          "gravitationalConstant": -3000,
-          "centralGravity": 0.3,
-          "springLength": 95
+        "solver": "forceAtlas2Based",
+        "forceAtlas2Based": {
+          "gravitationalConstant": -50,
+          "centralGravity": 0.01,
+          "springLength": 100,
+          "springConstant": 0.08,
+          "damping": 0.4
         },
-        "minVelocity": 0.75
+        "maxVelocity": 50,
+        "minVelocity": 0.1,
+        "stabilization": {
+          "enabled": true,
+          "iterations": 150,
+          "updateInterval": 25
+        }
+      },
+      "interaction": {
+        "hover": true,
+        "tooltipDelay": 150,
+        "zoomView": true
       }
     }
     """)
+
 
     with tempfile.NamedTemporaryFile(delete=False, suffix=".html") as f:
         temp_path = f.name
