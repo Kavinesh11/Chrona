@@ -38,36 +38,47 @@ from timeline_viz import (
 
 # Set Streamlit page config
 st.set_page_config(
-    page_title="Chrona | DistilBERT-GNN Event Visualizer",
-    page_icon="⚡",
+    page_title="Chrona | DistilBERT-GNN Event Analytics",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 
-# Custom Glassmorphism CSS
+# Custom Professional UI Styling
 st.markdown(
     """
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    html, body, [class*="css"] {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
     .main {
         background-color: #0b0f19;
     }
     .stAppHeader {
-        background-color: rgba(11, 15, 25, 0.8);
-    }
-    .metric-card {
-        background: rgba(30, 41, 59, 0.7);
-        border-radius: 12px;
-        padding: 16px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
+        background-color: rgba(11, 15, 25, 0.9);
     }
     .title-banner {
-        background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);
-        padding: 24px;
-        border-radius: 16px;
-        color: white;
+        background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #1e293b 100%);
+        padding: 24px 32px;
+        border-radius: 12px;
+        color: #f8fafc;
         margin-bottom: 24px;
-        box-shadow: 0 10px 25px -5px rgba(67, 56, 202, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+    }
+    .title-badge {
+        display: inline-block;
+        background: rgba(59, 130, 246, 0.15);
+        color: #60a5fa;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 4px 10px;
+        border-radius: 6px;
+        border: 1px solid rgba(96, 165, 250, 0.3);
+        margin-bottom: 8px;
     }
     </style>
 """,
@@ -79,8 +90,9 @@ def render_dashboard():
     st.markdown(
         """
         <div class="title-banner">
-            <h1 style="margin:0; font-size: 2.2rem; font-weight: 700;">⚡ Chrona: DistilBERT-GNN Visualizer</h1>
-            <p style="margin:4px 0 0 0; opacity: 0.9; font-size: 1.05rem;">
+            <div class="title-badge">Social Network Analysis System</div>
+            <h1 style="margin:0; font-size: 2.1rem; font-weight: 700; color: #ffffff;">Chrona: DistilBERT-GNN Event Detection Platform</h1>
+            <p style="margin:6px 0 0 0; color: #94a3b8; font-size: 1.0rem;">
                 Incremental Social Media Event Detection & Community Topology Explorer
             </p>
         </div>
@@ -89,7 +101,7 @@ def render_dashboard():
     )
 
     # Sidebar setup
-    st.sidebar.title("🎛️ Run Inspector")
+    st.sidebar.title("Run Inspector")
 
     search_dir = _PROJECT_ROOT / "DistilBERTGNN"
     available_runs = find_all_runs(search_dir)
@@ -109,7 +121,7 @@ def render_dashboard():
     args_dict = load_run_args(run_dir) if run_dir else {}
 
     st.sidebar.markdown("---")
-    st.sidebar.subheader("⚙️ Run Configuration")
+    st.sidebar.subheader("Run Configuration")
     if args_dict:
         st.sidebar.json(
             {
@@ -121,16 +133,16 @@ def render_dashboard():
             }
         )
     else:
-        st.sidebar.text("Mode: Demo Mode")
+        st.sidebar.text("Mode: Demo Dataset")
 
     # Main Tabs Layout
     tab1, tab2, tab3, tab4, tab5 = st.tabs(
         [
-            "📊 Metrics Analytics",
-            "🌌 3D/2D Embedding Clusters",
-            "🕸️ Message Graph Network",
-            "🌊 Streaming Event Streams",
-            "🔍 GNN Explainability",
+            "Metrics & Benchmarks",
+            "Embedding Space Projections",
+            "Message Graph Network",
+            "Event Lifecycle",
+            "Node Filtering & Explainability",
         ]
     )
 
@@ -140,7 +152,6 @@ def render_dashboard():
 
         eval_records = load_evaluation_metrics(run_dir) if run_dir else []
         if not eval_records:
-            # Demo metrics if no evaluation log
             eval_records = [
                 {"epoch": 0, "nmi": 0.62, "ami": 0.45, "ari": 0.18},
                 {"epoch": 1, "nmi": 0.68, "ami": 0.50, "ari": 0.21},
@@ -189,7 +200,6 @@ def render_dashboard():
         )
 
         if features is None or labels is None:
-            # Generate demo points
             np.random.seed(42 + block_idx)
             n_samples = 300
             features = np.random.randn(n_samples, 32)
@@ -207,7 +217,7 @@ def render_dashboard():
     # --- TAB 3: NETWORK GRAPH ---
     with tab3:
         st.header("Interactive Message Topology Map")
-        st.write(
+        st.caption(
             "Nodes represent tweets; edges connect tweets sharing users, entities, or keywords."
         )
 
@@ -224,7 +234,6 @@ def render_dashboard():
         adj = load_block_adjacency(data_path, block_idx)
 
         if adj is None:
-            # Demo adjacency matrix
             n_demo = 100
             adj_dense = (np.random.rand(n_demo, n_demo) > 0.96).astype(int)
             np.fill_diagonal(adj_dense, 0)
@@ -238,7 +247,7 @@ def render_dashboard():
             html_graph = generate_pyvis_html(G, height="550px")
             components.html(html_graph, height=570, scrolling=False)
         else:
-            st.warning("PyVis library is required for interactive network topology map rendering.")
+            st.warning("PyVis package required for graph rendering.")
 
     # --- TAB 4: STREAMING LIFECYCLE ---
     with tab4:
@@ -252,7 +261,6 @@ def render_dashboard():
                     block_labels_dict[b] = lbls
 
         if not block_labels_dict:
-            # Demo streaming data across 6 blocks
             np.random.seed(123)
             for b in range(6):
                 block_labels_dict[b] = np.random.randint(0, 8, size=150)

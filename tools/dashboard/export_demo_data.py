@@ -62,7 +62,7 @@ def generate_synthetic_demo_run(output_dir: Path = _DEFAULT_OUT, n_blocks: int =
         adj_sparse = sparse.csr_matrix(adj_dense + adj_dense.T)
         sparse.save_npz(block_dir / "s_bool_A_tid_tid.npz", adj_sparse)
 
-    print(f"✅ Successfully created synthetic demo dataset with {n_blocks} blocks and {n_samples} tweets per block!")
+    print(f"Successfully created synthetic demo dataset with {n_blocks} blocks and {n_samples} tweets per block!")
 
 
 if __name__ == "__main__":

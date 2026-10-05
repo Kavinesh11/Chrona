@@ -55,11 +55,12 @@ def main() -> None:
     if args.no_browser:
         cmd.append("--server.headless=true")
 
-    print(f"🚀 Launching Chrona Interactive Dashboard on http://{args.host}:{args.port}")
+    print(f"Launching Chrona Interactive Dashboard on http://{args.host}:{args.port}")
     try:
         subprocess.run(cmd, check=True)
     except KeyboardInterrupt:
-        print("\n👋 Dashboard stopped.")
+        print("\nDashboard stopped.")
+
     except Exception as e:
         print(f"Error launching dashboard: {e}", file=sys.stderr)
         sys.exit(1)
