@@ -213,24 +213,26 @@ whole reason GNN message-passing over it is worthwhile).
 
 ### Interactive Web Dashboard Suite
 
-For an interactive web dashboard experience (3D embedding clusters, interactive network topology maps, streaming event lifecycles, and GNN node filter explainability), launch the Streamlit suite:
+To launch the web visualization dashboard for exploring 3D embedding projections, message graph topologies, streaming event streams, and GNN filtering metrics:
 
 ```bash
-# Install dependencies
+# 1. Install dependencies
 pip install -r requirements.txt
 
-# Launch interactive web app
+# 2. Launch the interactive dashboard
 python tools/run_dashboard.py
-# -> Opens http://localhost:8501 with 5 interactive analysis tabs:
-#    1. Metrics & Benchmarks (NMI/AMI/ARI trends & radar charts)
-#    2. Embedding Space Projections (Interactive Plotly scatter with hover tooltips)
-#    3. Message Graph Network (PyVis topology explorer with interactive node physics)
-#    4. Event Streaming Lifecycle (Heatmap & stacked volume stream over blocks M_0..M_21)
-#    5. Node Filtering & Explainability (Sentiment vs Centrality retention breakdown)
 
-# Optional: Generate synthetic dataset for immediate testing without running full training loop
+# Optional: Generate a synthetic demo dataset for immediate previewing without training
 python tools/dashboard/export_demo_data.py
 ```
+
+Once launched, navigate to `http://localhost:8501` to access the 5 analysis tabs:
+1. **Metrics & Benchmarks**: Real-time tracking of NMI, AMI, and ARI performance over chronological windows.
+2. **Embedding Space Projections**: Interactive 2D and 3D PCA/t-SNE scatter plots with cluster filtering and tweet hover tooltips.
+3. **Message Graph Network**: Physics-based interactive topology map rendered via PyVis showing node degrees and ties.
+4. **Event Streaming Lifecycle**: Volume heatmaps and stacked stream charts tracking event emergence and decay across blocks $M_0 \dots M_{21}$.
+5. **Node Filtering & Explainability**: Retention rate comparisons (Sentiment vs Centrality) and degree distribution histograms.
+
 
 
 
