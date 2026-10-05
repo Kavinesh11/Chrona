@@ -14,8 +14,10 @@ if str(_HERE) not in sys.path:
 
 import numpy as np
 import pandas as pd
+from scipy import sparse
 import streamlit as st
 import streamlit.components.v1 as components
+
 
 from data_loader import (
     find_all_runs,
