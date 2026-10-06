@@ -1,0 +1,118 @@
+{
+  "block5": {
+    "n": 100,
+    "m": 470,
+    "density": 0.0949,
+    "avg_degree": 9.4,
+    "avg_clustering": 0.7514,
+    "transitivity": 0.8269,
+    "assortativity": 0.4195,
+    "components": 14,
+    "giant_frac": 0.65,
+    "diameter": 7,
+    "avg_path_len": 2.939,
+    "degeneracy": 14,
+    "isolates": 9
+  },
+  "aggregate": {
+    "density": 0.0724,
+    "avg_degree": 7.9959,
+    "avg_clustering": 0.564,
+    "transitivity": 0.8798,
+    "assortativity": 0.6479,
+    "giant_frac": 0.4495,
+    "degeneracy": 19.7273,
+    "diameter": 5.1818,
+    "avg_path_len": 2.2565
+  },
+  "centrality_block5": {
+    "degree": [
+      [
+        12,
+        0.212
+      ],
+      [
+        30,
+        0.202
+      ],
+      [
+        83,
+        0.192
+      ],
+      [
+        88,
+        0.182
+      ],
+      [
+        89,
+        0.182
+      ]
+    ],
+    "betweenness": [
+      [
+        12,
+        0.156
+      ],
+      [
+        30,
+        0.078
+      ],
+      [
+        32,
+        0.072
+      ],
+      [
+        83,
+        0.065
+      ],
+      [
+        63,
+        0.046
+      ]
+    ],
+    "eigenvector": [
+      [
+        2,
+        0.258
+      ],
+      [
+        25,
+        0.258
+      ],
+      [
+        37,
+        0.258
+      ],
+      [
+        39,
+        0.258
+      ],
+      [
+        40,
+        0.258
+      ]
+    ],
+    "pagerank": [
+      [
+        12,
+        0.018
+      ],
+      [
+        30,
+        0.017
+      ],
+      [
+        83,
+        0.016
+      ],
+      [
+        23,
+        0.016
+      ],
+      [
+        88,
+        0.015
+      ]
+    ]
+  }
+}
