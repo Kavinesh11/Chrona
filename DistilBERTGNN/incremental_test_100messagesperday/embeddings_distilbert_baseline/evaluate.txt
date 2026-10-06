@@ -1,0 +1,109 @@
+Evaluating block 0...
+test_nmi: 0.391
+test_ami: 0.367
+test_ari: 0.219
+
+Evaluating block 1...
+test_nmi: 0.578
+test_ami: 0.488
+test_ari: 0.248
+
+Evaluating block 2...
+test_nmi: 0.762
+test_ami: 0.671
+test_ari: 0.473
+
+Evaluating block 3...
+test_nmi: 0.710
+test_ami: 0.579
+test_ari: 0.442
+
+Evaluating block 4...
+test_nmi: 0.819
+test_ami: 0.702
+test_ari: 0.545
+
+Evaluating block 5...
+test_nmi: 0.774
+test_ami: 0.699
+test_ari: 0.588
+
+Evaluating block 6...
+test_nmi: 0.743
+test_ami: 0.605
+test_ari: 0.389
+
+Evaluating block 7...
+test_nmi: 0.140
+test_ami: 0.024
+test_ari: 0.014
+
+Evaluating block 8...
+test_nmi: 0.794
+test_ami: 0.662
+test_ari: 0.384
+
+Evaluating block 9...
+test_nmi: 0.669
+test_ami: 0.537
+test_ari: 0.313
+
+Evaluating block 10...
+test_nmi: 0.744
+test_ami: 0.651
+test_ari: 0.397
+
+Evaluating block 11...
+test_nmi: 0.772
+test_ami: 0.667
+test_ari: 0.608
+
+Evaluating block 12...
+test_nmi: 0.786
+test_ami: 0.692
+test_ari: 0.444
+
+Evaluating block 13...
+test_nmi: 0.762
+test_ami: 0.640
+test_ari: 0.505
+
+Evaluating block 14...
+test_nmi: 0.721
+test_ami: 0.622
+test_ari: 0.440
+
+Evaluating block 15...
+test_nmi: 0.257
+test_ami: 0.143
+test_ari: 0.037
+
+Evaluating block 16...
+test_nmi: 0.756
+test_ami: 0.591
+test_ari: 0.348
+
+Evaluating block 17...
+test_nmi: 0.521
+test_ami: 0.460
+test_ari: 0.228
+
+Evaluating block 18...
+test_nmi: 0.639
+test_ami: 0.575
+test_ari: 0.525
+
+Evaluating block 19...
+test_nmi: 0.668
+test_ami: 0.608
+test_ari: 0.451
+
+Evaluating block 20...
+test_nmi: 0.457
+test_ami: 0.304
+test_ari: 0.108
+
+Evaluating block 21...
+test_nmi: 0.574
+test_ami: 0.445
+test_ari: 0.227

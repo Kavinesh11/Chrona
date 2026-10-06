@@ -1,0 +1,24 @@
+# ---- Raw external benchmark dataset (QSGNN Twitter, ~80MB; not ours to redistribute) ----
+/datasets/
+
+# ---- Regenerable pipeline intermediates (rebuild via tools/run_gephi_pipeline.py) ----
+# Per-block DistilBERT features and heterogeneous commuting matrices are large and
+# fully reproducible from the raw dataset; the lightweight graphs (s_bool_A_tid_tid.npz)
+# and labels are kept so the figures/analysis stay reproducible without a full rerun.
+DistilBERTGNN/incremental_test_100messagesperday/*/features.npy
+DistilBERTGNN/incremental_test_100messagesperday/*/s_m_tid_*.npz
+
+# ---- Synthetic demo artifacts from earlier exploration (superseded by real_analysis_outputs/) ----
+/gephi_exports_synthetic_demo/
+
+# ---- Python / tooling ----
+__pycache__/
+*.pyc
+*.pyo
+
+# ---- Node (deck generator) ----
+node_modules/
+
+# ---- OS / editor cruft ----
+.DS_Store
+Thumbs.db
