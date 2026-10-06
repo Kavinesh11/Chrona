@@ -1,0 +1,9 @@
+{
+  "filter_method": "none",
+  "remove_obsolete": 2,
+  "window_size": 3,
+  "num_heads": 4,
+  "hidden_dim": 8,
+  "note": "DistilBERT-feature clustering baseline (content-only); not full GNN metrics",
+  "data_path": "D:\\Chrona\\DistilBERTGNN\\incremental_test_100messagesperday"
+}

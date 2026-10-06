@@ -1,0 +1,481 @@
+{
+  "data_path": "C:\\Users\\KAVINESH\\AppData\\Local\\Temp\\claude\\d--Chrona\\21d59188-67f9-4bff-9a57-602480dc8065\\scratchpad\\realrun\\DistilBERTGNN\\incremental_test_100messagesperday",
+  "aggregate": {
+    "n_blocks": 22,
+    "structure_louvain_mean": {
+      "nmi": 0.6441,
+      "ami": 0.4682,
+      "ari": 0.3623,
+      "modularity": 0.6564
+    },
+    "content_kmeans_mean": {
+      "nmi": 0.638,
+      "ami": 0.5333,
+      "ari": 0.3607
+    }
+  },
+  "blocks": [
+    {
+      "block": 0,
+      "nodes": 500,
+      "edges": 5918,
+      "density": 0.04744,
+      "avg_degree": 23.672,
+      "ground_truth_events": 10,
+      "structure_louvain": {
+        "communities": 225,
+        "modularity": 0.599180798115375,
+        "nmi": 0.4858595634407492,
+        "ami": 0.3060167528943237,
+        "ari": 0.2180560906892887
+      },
+      "content_kmeans": {
+        "k": 10,
+        "nmi": 0.3914024661206209,
+        "ami": 0.3666677188057827,
+        "ari": 0.21850862110868802
+      }
+    },
+    {
+      "block": 1,
+      "nodes": 100,
+      "edges": 409,
+      "density": 0.08263,
+      "avg_degree": 8.18,
+      "ground_truth_events": 10,
+      "structure_louvain": {
+        "communities": 36,
+        "modularity": 0.6391321476545107,
+        "nmi": 0.5917496148810809,
+        "ami": 0.4186337280555847,
+        "ari": 0.2025155903181482
+      },
+      "content_kmeans": {
+        "k": 10,
+        "nmi": 0.5783881492174592,
+        "ami": 0.488354666994726,
+        "ari": 0.24777402517654282
+      }
+    },
+    {
+      "block": 2,
+      "nodes": 100,
+      "edges": 346,
+      "density": 0.0699,
+      "avg_degree": 6.92,
+      "ground_truth_events": 14,
+      "structure_louvain": {
+        "communities": 36,
+        "modularity": 0.7387001326395269,
+        "nmi": 0.8118627173866884,
+        "ami": 0.6885371971586783,
+        "ari": 0.6028400581955813
+      },
+      "content_kmeans": {
+        "k": 14,
+        "nmi": 0.7616859265740334,
+        "ami": 0.670848486346445,
+        "ari": 0.4729331375061196
+      }
+    },
+    {
+      "block": 3,
+      "nodes": 100,
+      "edges": 233,
+      "density": 0.04707,
+      "avg_degree": 4.66,
+      "ground_truth_events": 15,
+      "structure_louvain": {
+        "communities": 51,
+        "modularity": 0.8030066550962046,
+        "nmi": 0.7574623647920774,
+        "ami": 0.5152471286574998,
+        "ari": 0.41529688678509197
+      },
+      "content_kmeans": {
+        "k": 15,
+        "nmi": 0.7100055854329672,
+        "ami": 0.5786719876219936,
+        "ari": 0.4420489152488185
+      }
+    },
+    {
+      "block": 4,
+      "nodes": 100,
+      "edges": 384,
+      "density": 0.07758,
+      "avg_degree": 7.68,
+      "ground_truth_events": 20,
+      "structure_louvain": {
+        "communities": 29,
+        "modularity": 0.748858544458366,
+        "nmi": 0.7975364090180195,
+        "ami": 0.6514106311520484,
+        "ari": 0.4665875248256737
+      },
+      "content_kmeans": {
+        "k": 20,
+        "nmi": 0.8188167084819145,
+        "ami": 0.7017305898187381,
+        "ari": 0.5450667795013888
+      }
+    },
+    {
+      "block": 5,
+      "nodes": 100,
+      "edges": 520,
+      "density": 0.10505,
+      "avg_degree": 10.4,
+      "ground_truth_events": 13,
+      "structure_louvain": {
+        "communities": 18,
+        "modularity": 0.7586134195136964,
+        "nmi": 0.8764534201834335,
+        "ami": 0.8320556868214734,
+        "ari": 0.7906826785969507
+      },
+      "content_kmeans": {
+        "k": 13,
+        "nmi": 0.7735787332372159,
+        "ami": 0.698972557164359,
+        "ari": 0.588382328968103
+      }
+    },
+    {
+      "block": 6,
+      "nodes": 100,
+      "edges": 356,
+      "density": 0.07192,
+      "avg_degree": 7.12,
+      "ground_truth_events": 17,
+      "structure_louvain": {
+        "communities": 30,
+        "modularity": 0.765491154844816,
+        "nmi": 0.7905210970932369,
+        "ami": 0.6530095440595092,
+        "ari": 0.5520874206898594
+      },
+      "content_kmeans": {
+        "k": 17,
+        "nmi": 0.7427866077707935,
+        "ami": 0.6048966431980523,
+        "ari": 0.38892110604423125
+      }
+    },
+    {
+      "block": 7,
+      "nodes": 100,
+      "edges": 652,
+      "density": 0.13172,
+      "avg_degree": 13.04,
+      "ground_truth_events": 8,
+      "structure_louvain": {
+        "communities": 35,
+        "modularity": 0.516131159649678,
+        "nmi": 0.2476070813776632,
+        "ami": 0.1288268679908152,
+        "ari": 0.051760575486026424
+      },
+      "content_kmeans": {
+        "k": 8,
+        "nmi": 0.1403922782666322,
+        "ami": 0.02419086388755633,
+        "ari": 0.013800884835864108
+      }
+    },
+    {
+      "block": 8,
+      "nodes": 100,
+      "edges": 491,
+      "density": 0.09919,
+      "avg_degree": 9.82,
+      "ground_truth_events": 20,
+      "structure_louvain": {
+        "communities": 27,
+        "modularity": 0.696220458451351,
+        "nmi": 0.8410795214812259,
+        "ami": 0.7392334961477018,
+        "ari": 0.5793883511887697
+      },
+      "content_kmeans": {
+        "k": 20,
+        "nmi": 0.7937751659697285,
+        "ami": 0.6619941309483962,
+        "ari": 0.3843099897511061
+      }
+    },
+    {
+      "block": 9,
+      "nodes": 100,
+      "edges": 658,
+      "density": 0.13293,
+      "avg_degree": 13.16,
+      "ground_truth_events": 17,
+      "structure_louvain": {
+        "communities": 42,
+        "modularity": 0.33771725079000287,
+        "nmi": 0.5464956160433453,
+        "ami": 0.27564515925270744,
+        "ari": 0.22216249161689972
+      },
+      "content_kmeans": {
+        "k": 17,
+        "nmi": 0.6691265248008629,
+        "ami": 0.536980419440237,
+        "ari": 0.31289849495023037
+      }
+    },
+    {
+      "block": 10,
+      "nodes": 100,
+      "edges": 191,
+      "density": 0.03859,
+      "avg_degree": 3.82,
+      "ground_truth_events": 14,
+      "structure_louvain": {
+        "communities": 56,
+        "modularity": 0.8327766395206688,
+        "nmi": 0.6737383440262917,
+        "ami": 0.3945442622242847,
+        "ari": 0.2120839609431501
+      },
+      "content_kmeans": {
+        "k": 14,
+        "nmi": 0.7439355982126998,
+        "ami": 0.6508044031095723,
+        "ari": 0.3972557322945002
+      }
+    },
+    {
+      "block": 11,
+      "nodes": 100,
+      "edges": 492,
+      "density": 0.09939,
+      "avg_degree": 9.84,
+      "ground_truth_events": 15,
+      "structure_louvain": {
+        "communities": 26,
+        "modularity": 0.6618050543974071,
+        "nmi": 0.81054464975881,
+        "ami": 0.7019821809839828,
+        "ari": 0.6477045323241034
+      },
+      "content_kmeans": {
+        "k": 15,
+        "nmi": 0.7718755075815567,
+        "ami": 0.6671233989631085,
+        "ari": 0.608381781351782
+      }
+    },
+    {
+      "block": 12,
+      "nodes": 100,
+      "edges": 375,
+      "density": 0.07576,
+      "avg_degree": 7.5,
+      "ground_truth_events": 16,
+      "structure_louvain": {
+        "communities": 33,
+        "modularity": 0.7068595155709338,
+        "nmi": 0.6750897125502692,
+        "ami": 0.46807437649474193,
+        "ari": 0.22311678442213545
+      },
+      "content_kmeans": {
+        "k": 16,
+        "nmi": 0.7857805587714878,
+        "ami": 0.6924635859583511,
+        "ari": 0.4443658262380402
+      }
+    },
+    {
+      "block": 13,
+      "nodes": 100,
+      "edges": 269,
+      "density": 0.05434,
+      "avg_degree": 5.38,
+      "ground_truth_events": 17,
+      "structure_louvain": {
+        "communities": 43,
+        "modularity": 0.8454712512652196,
+        "nmi": 0.8063271906179027,
+        "ami": 0.6381915462397466,
+        "ari": 0.4723820280238591
+      },
+      "content_kmeans": {
+        "k": 17,
+        "nmi": 0.7615203614841289,
+        "ami": 0.6396597845930627,
+        "ari": 0.505096852013907
+      }
+    },
+    {
+      "block": 14,
+      "nodes": 100,
+      "edges": 543,
+      "density": 0.1097,
+      "avg_degree": 10.86,
+      "ground_truth_events": 15,
+      "structure_louvain": {
+        "communities": 30,
+        "modularity": 0.6634627142406208,
+        "nmi": 0.6918068585568787,
+        "ami": 0.539048207272772,
+        "ari": 0.48284103281315005
+      },
+      "content_kmeans": {
+        "k": 15,
+        "nmi": 0.7214629851204388,
+        "ami": 0.6224811399406974,
+        "ari": 0.4398253424830208
+      }
+    },
+    {
+      "block": 15,
+      "nodes": 100,
+      "edges": 210,
+      "density": 0.04242,
+      "avg_degree": 4.2,
+      "ground_truth_events": 8,
+      "structure_louvain": {
+        "communities": 72,
+        "modularity": 0.6172263313609458,
+        "nmi": 0.24720405966566766,
+        "ami": 0.060336391338429815,
+        "ari": 0.01871747420065414
+      },
+      "content_kmeans": {
+        "k": 8,
+        "nmi": 0.25688051451578864,
+        "ami": 0.14305282254323384,
+        "ari": 0.03707567596898954
+      }
+    },
+    {
+      "block": 16,
+      "nodes": 100,
+      "edges": 344,
+      "density": 0.06949,
+      "avg_degree": 6.88,
+      "ground_truth_events": 20,
+      "structure_louvain": {
+        "communities": 29,
+        "modularity": 0.7812298693602,
+        "nmi": 0.8079302832859279,
+        "ami": 0.6654140769284068,
+        "ari": 0.4808568684009069
+      },
+      "content_kmeans": {
+        "k": 20,
+        "nmi": 0.7561272595741032,
+        "ami": 0.5912523772177987,
+        "ari": 0.3483613991703323
+      }
+    },
+    {
+      "block": 17,
+      "nodes": 100,
+      "edges": 178,
+      "density": 0.03596,
+      "avg_degree": 3.56,
+      "ground_truth_events": 7,
+      "structure_louvain": {
+        "communities": 67,
+        "modularity": 0.741872499230531,
+        "nmi": 0.31929535173948126,
+        "ami": 0.09331585455085092,
+        "ari": 0.027594048194070454
+      },
+      "content_kmeans": {
+        "k": 7,
+        "nmi": 0.5206191489772719,
+        "ami": 0.459805260570848,
+        "ari": 0.2279230235566917
+      }
+    },
+    {
+      "block": 18,
+      "nodes": 100,
+      "edges": 874,
+      "density": 0.17657,
+      "avg_degree": 17.48,
+      "ground_truth_events": 9,
+      "structure_louvain": {
+        "communities": 34,
+        "modularity": 0.25933207304960554,
+        "nmi": 0.7151407076314646,
+        "ami": 0.5893310547040143,
+        "ari": 0.7195987415943881
+      },
+      "content_kmeans": {
+        "k": 9,
+        "nmi": 0.6388093253558706,
+        "ami": 0.5752886114664505,
+        "ari": 0.5253818530833836
+      }
+    },
+    {
+      "block": 19,
+      "nodes": 100,
+      "edges": 341,
+      "density": 0.06889,
+      "avg_degree": 6.82,
+      "ground_truth_events": 9,
+      "structure_louvain": {
+        "communities": 42,
+        "modularity": 0.7588941725917544,
+        "nmi": 0.6356886792558504,
+        "ami": 0.44559621294527535,
+        "ari": 0.2975332838849933
+      },
+      "content_kmeans": {
+        "k": 9,
+        "nmi": 0.6682903113255869,
+        "ami": 0.6075257648954959,
+        "ari": 0.4510573137156954
+      }
+    },
+    {
+      "block": 20,
+      "nodes": 100,
+      "edges": 497,
+      "density": 0.1004,
+      "avg_degree": 9.94,
+      "ground_truth_events": 12,
+      "structure_louvain": {
+        "communities": 47,
+        "modularity": 0.4578221243344947,
+        "nmi": 0.4773145193313569,
+        "ami": 0.23869507040430452,
+        "ari": 0.10963042555283126
+      },
+      "content_kmeans": {
+        "k": 12,
+        "nmi": 0.4566042716933547,
+        "ami": 0.3040345309396239,
+        "ari": 0.10834560320791956
+      }
+    },
+    {
+      "block": 21,
+      "nodes": 100,
+      "edges": 349,
+      "density": 0.07051,
+      "avg_degree": 6.98,
+      "ground_truth_events": 13,
+      "structure_louvain": {
+        "communities": 57,
+        "modularity": 0.5099967965025344,
+        "nmi": 0.5623957588505364,
+        "ami": 0.2583156841415256,
+        "ari": 0.17737988569181104
+      },
+      "content_kmeans": {
+        "k": 13,
+        "nmi": 0.5741920142930755,
+        "ami": 0.44537201052276465,
+        "ari": 0.22693317896605653
+      }
+    }
+  ]
+}
